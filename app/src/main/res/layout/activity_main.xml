@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="@dimen/padding_medium">
+
+	<RelativeLayout
+		android:id="@+id/activity_main"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<EditText
+			android:id="@+id/etName"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:hint="@string/name"
+			android:inputType="text"/>
+
+		<EditText
+			android:id="@+id/etEmail"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/etName"
+			android:ems="10"
+			android:hint="@string/email"
+			android:inputType="textEmailAddress"/>
+
+		<EditText
+			android:id="@+id/etConfirmEmail"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/etEmail"
+			android:ems="10"
+			android:hint="@string/confirm_email"
+			android:inputType="textEmailAddress"/>
+
+		<EditText
+			android:id="@+id/etPassword"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/etConfirmEmail"
+			android:ems="10"
+			android:hint="@string/password"
+			android:inputType="textPassword"/>
+
+		<EditText
+			android:id="@+id/etConfirmPassword"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/etPassword"
+			android:ems="10"
+			android:hint="@string/confirm_password"
+			android:inputType="textPassword"/>
+
+		<EditText
+			android:id="@+id/etPhone"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/etConfirmPassword"
+			android:ems="10"
+			android:hint="@string/phone"
+			android:inputType="phone"/>
+
+		<EditText
+			android:id="@+id/etAlphaNum"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/etPhone"
+			android:ems="10"
+			android:hint="@string/alpha_numeric"
+			android:inputType="text"/>
+
+		<EditText
+			android:id="@+id/etMaxValue"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/etAlphaNum"
+			android:ems="10"
+			android:hint="@string/max_value"
+			android:inputType="text"/>
+
+		<EditText
+			android:id="@+id/etMinValue"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/etMaxValue"
+			android:ems="10"
+			android:hint="@string/min_value"
+			android:inputType="text"/>
+
+		<EditText
+			android:id="@+id/etValueRange"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/etMinValue"
+			android:ems="10"
+			android:hint="@string/value_range"
+			android:inputType="text"/>
+
+		<EditText
+			android:id="@+id/etFirstVerify"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/etValueRange"
+			android:ems="10"
+			android:hint="@string/first_field"
+			android:inputType="text"/>
+
+		<LinearLayout
+			android:id="@+id/terms"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/etFirstVerify"
+			android:orientation="horizontal">
+
+			<CheckBox
+				android:id="@+id/termsAccept"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/terms_and_conditions"/>
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/submit"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/terms"
+			android:layout_marginTop="@dimen/padding_medium"
+			android:text="@string/submit"/>
+	</RelativeLayout>
+</ScrollView>
